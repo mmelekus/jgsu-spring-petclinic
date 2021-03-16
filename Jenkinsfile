@@ -19,7 +19,7 @@ pipeline {
             post {
                 always {
                     junit '**/target/surefire-reports/TEST-*.xml'
-                    archiveArtifacts 'targe/*.jar'
+                    archiveArtifacts 'target/*.jar'
                 }
 
                 changed {
