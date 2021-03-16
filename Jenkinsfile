@@ -5,7 +5,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 git url: 'https://github.com/mmelekus/jgsu-spring-petclinic.git',
-                branch: 'main'
+                branch: 'main',
+                credentialsId: 'WSL2Jenkins'
             }
         }
         stage('Build') {
